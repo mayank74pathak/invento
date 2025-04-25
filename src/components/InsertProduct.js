@@ -34,7 +34,7 @@ export default function InsertProduct() {
         setError("");
 
         try {
-            const res = await fetch("https://inventobackend-1.onrender.com/insertproduct", {
+            const res = await fetch("https://inventobackend-1.onrender.com:10000/insertproduct", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
