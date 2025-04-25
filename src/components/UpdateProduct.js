@@ -27,7 +27,7 @@ export default function InsertProduct() {
     useEffect(() => {
         const getProduct = async () => {
           try {
-            const res = await fetch(`https://inventobackend-1.onrender.com/products/${id}`, {
+            const res = await fetch(`https://inventobackend-1.onrender.com:10000/products/${id}`, {
               method: "GET",
               headers: {
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ export default function InsertProduct() {
         setError("");
 
         try {
-            const response = await fetch(`https://inventobackend-1.onrender.com/updateproduct/${id}`, {
+            const response = await fetch(`https://inventobackend-1.onrender.com:10000/updateproduct/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
